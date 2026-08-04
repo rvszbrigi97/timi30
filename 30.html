@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>30. nap - Megcsináltam!</title>
+<title>30. nap - Gratulálok!</title>
 
 <link rel="stylesheet" href="style.css">
 
@@ -24,37 +24,42 @@ body{
 
 .final{
     color:#ff5f96;
-    font-size:34px;
+    font-size:36px;
     margin-bottom:10px;
 }
 
 .month{
     font-size:24px;
-    font-weight:bold;
     color:#214b79;
-    margin:15px 0;
+    font-weight:bold;
+    margin:20px 0;
 }
 
 .message{
+    font-size:18px;
     line-height:1.8;
-    font-size:19px;
+    color:#444;
 }
 
 .button{
 
 display:inline-block;
+
 margin-top:35px;
+
 padding:16px 35px;
 
-background:linear-gradient(135deg,#5da9ff,#3c7dff);
+background:linear-gradient(135deg,#69b4ff,#3f86ff);
 
 color:white;
+
 text-decoration:none;
 
-font-size:20px;
-font-weight:bold;
-
 border-radius:18px;
+
+font-size:20px;
+
+font-weight:bold;
 
 box-shadow:0 10px 25px rgba(0,0,0,.18);
 
@@ -72,9 +77,9 @@ transform:scale(1.05);
 
 margin-top:35px;
 
-color:#6b6b6b;
+font-size:17px;
 
-font-size:16px;
+color:#666;
 
 }
 
@@ -82,7 +87,7 @@ font-size:16px;
 
 position:fixed;
 
-top:-15px;
+top:-20px;
 
 width:12px;
 
@@ -135,36 +140,52 @@ transform:translateY(120vh) rotate(720deg);
 </div>
 
 <h2>
+
 MEGCSINÁLTAD! 💙
+
 </h2>
 
 <div class="message">
 
 <p>
 
-Lehet, hogy "csak" 30 napnak tűnik...
+Ha ezt olvasod...
+
+akkor sikerült.
 
 </p>
 
 <p>
 
-De minden nap meghoztál egy döntést.
+30 napja minden reggel meghoztál egy döntést.
 
 </p>
 
 <p>
 
-És ma már joggal lehetsz büszke magadra.
+Voltak könnyebb és nehezebb napok.
+
+Volt, amikor biztosan legszívesebben rágyújtottál volna.
+
+De nem tetted.
 
 </p>
 
 <p>
 
-Nem csak egy rossz szokást győztél le.
+Nem csak a cigarettát győzted le.
 
-Hanem saját magadnak bizonyítottad be,
+Saját magadnak bizonyítottad be,
 
-hogy képes vagy rá.
+hogy sokkal erősebb vagy,
+
+mint gondoltad.
+
+</p>
+
+<p>
+
+És erre nagyon büszke vagyok. 💙
 
 </p>
 
@@ -178,11 +199,11 @@ hogy képes vagy rá.
 
 <div class="footer">
 
-🦛💙
+🦛 Timi is nagyon büszke rád.
 
 <br><br>
 
-Köszönöm, hogy végig velem tartottál!
+Ez még csak a kezdet. 💙
 
 </div>
 
@@ -193,24 +214,16 @@ Köszönöm, hogy végig velem tartottál!
 <script>
 
 const colors=[
-
-"#5da9ff",
-
-"#ffd166",
-
+"#67b7ff",
 "#ef476f",
-
+"#ffd166",
 "#06d6a0",
-
 "#90be6d",
-
-"#b5179e",
-
-"#4cc9f0"
-
+"#4cc9f0",
+"#b5179e"
 ];
 
-for(let i=0;i<140;i++){
+for(let i=0;i<150;i++){
 
 const c=document.createElement("div");
 
@@ -218,11 +231,11 @@ c.className="confetti";
 
 c.style.left=Math.random()*100+"vw";
 
+c.style.background=colors[Math.floor(Math.random()*colors.length)];
+
 c.style.animationDuration=(4+Math.random()*5)+"s";
 
 c.style.animationDelay=Math.random()*5+"s";
-
-c.style.background=colors[Math.floor(Math.random()*colors.length)];
 
 document.body.appendChild(c);
 
